@@ -3,13 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Player</title>
+    <title>CloudySoe Radio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming you have a global styles.css -->
+    <script defer src="script.js"></script> <!-- Assuming you have a global script.js -->
 </head>
 <body>
-    <h1>Audio Stream</h1>
-    <audio controls>
-        <source src="http://radio-server.cloudysoe.co.uk:3111" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="#home">CloudySoe</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#signin" class="btn-signin">Sign In</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="radio-hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>CloudySoe Radio</h1>
+                <p>Tune in to the best music and updates, right here on CloudySoe Radio.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Player Section -->
+    <section id="audio-stream" class="audio-stream">
+        <div class="container">
+            <h2>Live Audio Stream</h2>
+            <audio controls>
+                <source src="http://radio-server.cloudysoe.co.uk:3111" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CloudySoe. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
